@@ -1,0 +1,14 @@
+# Ignore artifacts:
+eslint.config.js
+tsconfig.json
+app.json
+package.json
+package-lock.json
+.gitignore
+
+# Ignore directories:
+.idea/
+ios/
+android/
+node_modules/
+assets/
