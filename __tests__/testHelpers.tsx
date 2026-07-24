@@ -8,5 +8,9 @@ export const renderWithTheme = async (
 	theme = 'light',
 ) => {
 	;(useColorScheme as jest.Mock).mockReturnValue(theme)
-	await render(<ThemeProvider>{ui}</ThemeProvider>)
+	const { rerender } = await render(<ThemeProvider>{ui}</ThemeProvider>)
+
+	const rerenderFunction = (newUi: React.ReactElement) =>
+		rerender(<ThemeProvider>{newUi}</ThemeProvider>)
+	return { rerender: rerenderFunction }
 }
