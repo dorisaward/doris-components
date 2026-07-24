@@ -31,5 +31,18 @@
     "prettier": "3.8.3",
     "typescript": "~5.9.2"
   },
-  "private": true
+  "private": true,
+	"jest": {
+		"preset": "jest-expo",
+		"transformIgnorePatterns": [
+			"node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-vector-icons|@expo/config|@expo/json-file|@expo/metro-config|@expo/constants|@unimodules/.*|unimodules|sentry-expo|native-base|@react-navigation/.*|@sentry/.*)"
+		],
+		"setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
+		"moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+		"testMatch": ["**/__tests__/**/*.test.(ts|tsx|js|jsx)"],
+		"collectCoverageFrom": [
+			"src/**/*.{ts,tsx}",
+			"!src/**/*.d.ts"
+		]
+	}
 }
