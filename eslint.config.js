@@ -7,6 +7,6 @@ module.exports = defineConfig([
     expoConfig,
     eslintPluginPrettierRecommended,
     {
-        ignores: ["dist/*", "jest.setup.js"],
+        ignores: ["dist/*", "jest.setup.js", ".github/"],
     },
 ]);
