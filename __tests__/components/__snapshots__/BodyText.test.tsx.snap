@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BodyText applies body text color from "dark" theme 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 18,
+        "lineHeight": 24,
+      },
+      {
+        "color": "#E8E2D9",
+        "paddingBottom": 10,
+      },
+    ]
+  }
+>
+  Test
+</Text>
+`;
+
+exports[`BodyText applies body text color from "light" theme 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontSize": 18,
+        "lineHeight": 24,
+      },
+      {
+        "color": "#111827",
+        "paddingBottom": 10,
+      },
+    ]
+  }
+>
+  Test
+</Text>
+`;
