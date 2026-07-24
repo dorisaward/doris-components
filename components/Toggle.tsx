@@ -46,7 +46,7 @@ export const Toggle = ({ value, onChange, ...a11yProps }: ToggleProps) => {
 			speed: 12,
 			bounciness: 4,
 		}).start()
-	}, [value])
+	}, [value, translateX])
 
 	const handlePress = (_: GestureResponderEvent) => {
 		onChange(!value)

@@ -25,6 +25,7 @@
     "@types/react": "~19.1.0",
     "eslint": "^9.39.4",
     "eslint-config-expo": "~10.0.0",
+    "eslint-plugin-prettier": "^5.5.6",
     "eslint-plugin-react-native": "^5.0.0",
     "jest": "^29.7.0",
     "jest-expo": "~54.0.17",
@@ -32,17 +33,28 @@
     "typescript": "~5.9.2"
   },
   "private": true,
-	"jest": {
-		"preset": "jest-expo",
-		"transformIgnorePatterns": [
-			"node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-vector-icons|@expo/config|@expo/json-file|@expo/metro-config|@expo/constants|@unimodules/.*|unimodules|sentry-expo|native-base|@react-navigation/.*|@sentry/.*)"
-		],
-		"setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
-		"moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
-		"testMatch": ["**/__tests__/**/*.test.(ts|tsx|js|jsx)"],
-		"collectCoverageFrom": [
-			"src/**/*.{ts,tsx}",
-			"!src/**/*.d.ts"
-		]
-	}
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-vector-icons|@expo/config|@expo/json-file|@expo/metro-config|@expo/constants|@unimodules/.*|unimodules|sentry-expo|native-base|@react-navigation/.*|@sentry/.*)"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.(ts|tsx|js|jsx)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/**/*.d.ts"
+    ]
+  }
 }

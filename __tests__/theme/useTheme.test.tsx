@@ -3,7 +3,6 @@ import { render, screen, userEvent } from '@testing-library/react-native'
 import { ThemeProvider, useTheme } from '../../theme/useTheme'
 import { lightTheme } from '../../theme/lightTheme'
 import { darkTheme } from '../../theme/darkTheme'
-import { act } from 'react'
 
 const TestComponent = () => {
 	const { theme, mode, toggleTheme, setTheme } = useTheme()

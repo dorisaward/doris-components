@@ -1,5 +1,6 @@
 # Ignore artifacts:
 eslint.config.js
+jest.setup.js
 tsconfig.json
 app.json
 package.json

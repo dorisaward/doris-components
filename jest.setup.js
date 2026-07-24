@@ -1,5 +1,3 @@
-// import '@testing-library/react-native/extend-expect'
-
 // Mock useColorScheme for Expo
 jest.mock('react-native/Libraries/Utilities/useColorScheme', () => ({
 	__esModule: true,

@@ -2,7 +2,6 @@ import React from 'react'
 import { screen, userEvent } from '@testing-library/react-native'
 import { renderWithTheme } from '../testHelpers'
 import { Toggle } from '../../components/Toggle'
-import { lightTheme } from '../../theme/lightTheme'
 
 describe('Toggle', () => {
 	describe('rendering', () => {

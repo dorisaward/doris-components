@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { useTheme } from '../../theme/useTheme'
 import { Toggle } from '../Toggle'
 import { BodyText } from '../BodyText'
