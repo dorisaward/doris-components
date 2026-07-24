@@ -8,9 +8,12 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest",
+		"test:ci": "jest --ci --coverage --maxWorkers=2",
     "lint": "eslint . && prettier --check .",
-    "lintfix": "eslint . --fix && prettier --write ."
-  },
+    "lintfix": "eslint . --fix && prettier --write .",
+		"type-check": "tsc --noEmit",
+    "ci": "npm run lint && npm run type-check && npm run test:ci"
+	},
   "dependencies": {
     "expo": "~54.0.34",
     "react": "19.1.0",
