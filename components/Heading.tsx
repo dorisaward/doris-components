@@ -1,7 +1,7 @@
 import { StyleSheet, Text } from 'react-native'
 import { useTheme } from '../theme/useTheme'
 
-interface HeadingProps {
+export interface HeadingProps {
 	text: string
 	level: 1 | 2 | 3 | 4 | 5 | 6
 }

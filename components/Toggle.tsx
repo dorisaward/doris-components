@@ -14,7 +14,7 @@ type RequiredAccessibility = Required<
 type OptionalAccessibility = Partial<
 	Omit<AccessibilityProps, 'accessibilityLabel' | 'accessibilityHint'>
 >
-type ToggleProps = {
+export type ToggleProps = {
 	value: boolean
 	onChange: (value: boolean) => void
 } & RequiredAccessibility &

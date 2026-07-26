@@ -1,25 +1,41 @@
 {
-  "name": "doris-components",
+  "name": "@dorisaward/doris-components",
   "version": "1.0.0",
+  "description": "A React Native component library with theme support",
   "main": "index.ts",
+  "types": "index.ts",
+  "files": [
+    "components",
+    "theme",
+    "index.ts",
+    "!**/__tests__/**",
+    "!**/*.test.*",
+    "!**/*.snap",
+    "!__tests__/testHelpers.tsx"
+  ],
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest",
-		"test:ci": "jest --ci --coverage --maxWorkers=2",
+    "test:ci": "jest --ci --coverage --maxWorkers=2",
     "lint": "eslint . && prettier --check .",
     "lintfix": "eslint . --fix && prettier --write .",
-		"type-check": "tsc --noEmit",
+    "type-check": "tsc --noEmit",
     "ci": "npm run lint && npm run type-check && npm run test:ci"
-	},
+  },
   "dependencies": {
     "expo": "~54.0.34",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-native": "0.81.5",
     "react-native-web": "^0.21.0"
+  },
+  "peerDependencies": {
+		"expo": ">=54.0.34",
+    "react": ">=19.1.0",
+    "react-native": ">=0.81.5"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^3.2.0",
@@ -35,7 +51,17 @@
     "prettier": "3.8.3",
     "typescript": "~5.9.2"
   },
-  "private": true,
+  "keywords": [
+    "react-native",
+    "components",
+    "ui-library",
+    "theme",
+    "typescript",
+    "expo"
+  ],
+  "author": "DorisAWard",
+  "license": "MIT",
+  "private": false,
   "jest": {
     "preset": "jest-expo",
     "transformIgnorePatterns": [
